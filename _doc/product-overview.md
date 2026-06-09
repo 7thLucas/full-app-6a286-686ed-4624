@@ -1,4 +1,11 @@
-# Personal Loan Management
+# LoanBook — Product Overview
+
+## Product Identity
+
+**Name**: LoanBook  
+**Tagline**: Every loan you owe or are owed — tracked, organised, and under control.  
+**Category**: Personal Finance / Loan Management  
+**Platform**: Web application  
 
 ## Product Summary
 A personal loan management app that helps individuals track, manage, and stay on top of all their personal loans — whether they are the borrower or the lender — in one clear, organized place.
