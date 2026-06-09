@@ -3,7 +3,8 @@
 ## Product Identity
 
 **Name**: LoanBook  
-**Tagline**: Every loan you owe or are owed — tracked, organised, and under control.  
+**Tagline**: Every Loan. Every Payment. One Place.  
+**Sub-tagline**: Every loan you owe or are owed — tracked, organised, and under control.  
 **Category**: Personal Finance / Loan Management  
 **Platform**: Web application  
 
