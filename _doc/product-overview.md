@@ -1,8 +1,8 @@
-# LoanBook — Product Overview
+# Loan Book — Product Overview
 
 ## Product Identity
 
-**Name**: LoanBook  
+**Name**: Loan Book  
 **Tagline**: Every Loan. Every Payment. One Place.  
 **Sub-tagline**: Every loan you owe or are owed — tracked, organised, and under control.  
 **Category**: Personal Finance / Loan Management  
