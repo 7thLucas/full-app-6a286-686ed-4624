@@ -1,0 +1,83 @@
+<style>
+  .mode-landscape .sl-layout { flex-direction: row; gap: 2.5rem; }
+  .mode-portrait .sl-layout { flex-direction: column; gap: 1.5rem; }
+  .mode-landscape .sl-panel { width: 50%; }
+  .mode-portrait .sl-panel { width: 100%; }
+  .mode-landscape .sl-visual { display: flex; }
+  .mode-portrait .sl-visual { display: none; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-12">
+
+    <!-- Slide label -->
+    <div class="mb-8">
+      <span class="text-xs font-semibold tracking-widest uppercase" style="color:#f59e0b;">The Case for Change</span>
+    </div>
+
+    <div class="sl-layout flex flex-1 items-start">
+
+      <!-- Problem panel -->
+      <div class="sl-panel flex flex-col justify-start">
+        <div class="flex items-center gap-3 mb-5">
+          <div class="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0" style="background:#fef3c7;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          </div>
+          <h2 class="text-xl font-bold" style="color:#0f172a;">The Problem</h2>
+        </div>
+
+        <p class="text-base leading-relaxed mb-6" style="color:#475569;">
+          Managing personal loans is fragmented and error-prone. People juggle repayment schedules across multiple sources, miss due dates, and accumulate late fees.
+        </p>
+
+        <div class="space-y-4">
+          <div class="flex gap-3 items-start p-4 rounded-xl" style="background:#fef9f0;border:1px solid #fde68a;">
+            <div class="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style="background:#d97706;"></div>
+            <p class="text-sm leading-relaxed" style="color:#78350f;">Informal loans between friends and family have no paper trail — disputes damage relationships.</p>
+          </div>
+          <div class="flex gap-3 items-start p-4 rounded-xl" style="background:#fef9f0;border:1px solid #fde68a;">
+            <div class="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style="background:#d97706;"></div>
+            <p class="text-sm leading-relaxed" style="color:#78350f;">Spreadsheets and notes apps are not designed for loan tracking — balances go stale and schedules slip.</p>
+          </div>
+          <div class="flex gap-3 items-start p-4 rounded-xl" style="background:#fef9f0;border:1px solid #fde68a;">
+            <div class="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style="background:#d97706;"></div>
+            <p class="text-sm leading-relaxed" style="color:#78350f;">No single view of total debt owed or total money lent — financial stress builds from the unknown.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Divider (landscape only) -->
+      <div class="sl-visual flex-shrink-0" style="width:1px;height:100%;background:#e2e8f0;"></div>
+
+      <!-- Solution panel -->
+      <div class="sl-panel flex flex-col justify-start">
+        <div class="flex items-center gap-3 mb-5">
+          <div class="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0" style="background:#0f172a;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#f8fafc" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <h2 class="text-xl font-bold" style="color:#0f172a;">The Solution</h2>
+        </div>
+
+        <p class="text-base leading-relaxed mb-6" style="color:#475569;">
+          A dedicated personal loan tracker that gives you a real-time view of every loan you owe or are owed — formal or informal — in one calm, organized place.
+        </p>
+
+        <div class="space-y-4">
+          <div class="flex gap-3 items-start p-4 rounded-xl" style="background:#f0f9ff;border:1px solid #bae6fd;">
+            <div class="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style="background:#0369a1;"></div>
+            <p class="text-sm leading-relaxed" style="color:#0c4a6e;">Log any loan in seconds — with lender details, principal, schedule, and interest — and never lose track again.</p>
+          </div>
+          <div class="flex gap-3 items-start p-4 rounded-xl" style="background:#f0f9ff;border:1px solid #bae6fd;">
+            <div class="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style="background:#0369a1;"></div>
+            <p class="text-sm leading-relaxed" style="color:#0c4a6e;">Automated due-date reminders and a running payment ledger protect you from missed payments.</p>
+          </div>
+          <div class="flex gap-3 items-start p-4 rounded-xl" style="background:#f0f9ff;border:1px solid #bae6fd;">
+            <div class="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style="background:#0369a1;"></div>
+            <p class="text-sm leading-relaxed" style="color:#0c4a6e;">A full, timestamped history creates an honest record for informal loans — protecting relationships, not just finances.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
