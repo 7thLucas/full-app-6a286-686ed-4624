@@ -1,0 +1,85 @@
+<style>
+  .mode-landscape .sl-grid { grid-template-columns: repeat(3, 1fr); }
+  .mode-portrait .sl-grid { grid-template-columns: repeat(2, 1fr); }
+
+  .persona-chip { cursor: pointer; transition: all 0.2s; }
+  .persona-chip.active { background: #0f172a; color: #f8fafc; }
+  .persona-chip:not(.active) { background: #f1f5f9; color: #475569; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-12">
+
+    <!-- Header -->
+    <div class="mb-6">
+      <span class="text-xs font-semibold tracking-widest uppercase mb-2 block" style="color:#f59e0b;">What It Does</span>
+      <h2 class="text-3xl font-black" style="color:#0f172a;">Core Features</h2>
+    </div>
+
+    <!-- Persona chips -->
+    <div class="flex gap-3 mb-8 flex-wrap">
+      <span class="persona-chip active text-sm font-semibold px-4 py-1.5 rounded-full">Borrower</span>
+      <span class="persona-chip text-sm font-semibold px-4 py-1.5 rounded-full">Lender</span>
+      <span class="persona-chip text-sm font-semibold px-4 py-1.5 rounded-full">Dual User</span>
+    </div>
+
+    <!-- Feature grid -->
+    <div class="sl-grid grid gap-4 flex-1">
+
+      <!-- Feature 1 -->
+      <div class="flex flex-col p-5 rounded-2xl" style="background:#0f172a;">
+        <div class="w-9 h-9 rounded-xl flex items-center justify-center mb-4" style="background:#1e3a5f;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+        </div>
+        <h3 class="font-bold text-sm mb-2" style="color:#f8fafc;">Loan Dashboard</h3>
+        <p class="text-xs leading-relaxed" style="color:#94a3b8;">One screen showing all active loans, total outstanding balance, and the next due date — owed and lent in a single view.</p>
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="flex flex-col p-5 rounded-2xl" style="background:#f8fafc;border:1px solid #e2e8f0;">
+        <div class="w-9 h-9 rounded-xl flex items-center justify-center mb-4" style="background:#fef3c7;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </div>
+        <h3 class="font-bold text-sm mb-2" style="color:#0f172a;">Add Loan</h3>
+        <p class="text-xs leading-relaxed" style="color:#475569;">Log any loan — lender name, principal, interest rate, start date, repayment schedule, and notes — in under a minute.</p>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="flex flex-col p-5 rounded-2xl" style="background:#f8fafc;border:1px solid #e2e8f0;">
+        <div class="w-9 h-9 rounded-xl flex items-center justify-center mb-4" style="background:#dcfce7;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <h3 class="font-bold text-sm mb-2" style="color:#0f172a;">Repayment Tracker</h3>
+        <p class="text-xs leading-relaxed" style="color:#475569;">Record each payment with a timestamp. The running balance and next due date update automatically after every entry.</p>
+      </div>
+
+      <!-- Feature 4 -->
+      <div class="flex flex-col p-5 rounded-2xl" style="background:#f8fafc;border:1px solid #e2e8f0;">
+        <div class="w-9 h-9 rounded-xl flex items-center justify-center mb-4" style="background:#fef3c7;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+        </div>
+        <h3 class="font-bold text-sm mb-2" style="color:#0f172a;">Due Date Reminders</h3>
+        <p class="text-xs leading-relaxed" style="color:#475569;">Scheduled notifications ahead of every repayment so you never miss a payment date or incur a late fee.</p>
+      </div>
+
+      <!-- Feature 5 -->
+      <div class="flex flex-col p-5 rounded-2xl" style="background:#f8fafc;border:1px solid #e2e8f0;">
+        <div class="w-9 h-9 rounded-xl flex items-center justify-center mb-4" style="background:#ede9fe;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+        </div>
+        <h3 class="font-bold text-sm mb-2" style="color:#0f172a;">Loan History</h3>
+        <p class="text-xs leading-relaxed" style="color:#475569;">A complete, sortable ledger of all past and active loans with timestamped payment records — your proof of payment, always available.</p>
+      </div>
+
+      <!-- Feature 6 -->
+      <div class="flex flex-col p-5 rounded-2xl" style="background:#f8fafc;border:1px solid #e2e8f0;">
+        <div class="w-9 h-9 rounded-xl flex items-center justify-center mb-4" style="background:#f0f9ff;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0369a1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <h3 class="font-bold text-sm mb-2" style="color:#0f172a;">Interest Calculator</h3>
+        <p class="text-xs leading-relaxed" style="color:#475569;">Built-in simple and compound interest calculator so you always know total repayment cost before and during a loan.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
